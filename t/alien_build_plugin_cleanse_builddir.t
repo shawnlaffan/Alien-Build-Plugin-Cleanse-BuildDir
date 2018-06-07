@@ -18,9 +18,9 @@ my $alien_file = q|
       plugin Extract => 'tar';
       plugin 'Cleanse::BuildDir';
       
-      #  hard coding is bad - need to fix
+      #  no need to actually do anything
       build [
-        'gcc foo.c',
+        sub {},
       ]
     }
 |;
