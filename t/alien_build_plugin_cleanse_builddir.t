@@ -28,7 +28,7 @@ my $alien_file = q|
 my $tarfile = path('./corpus/dist/foo-1.00.tar')->absolute;
 $alien_file =~ s/TARFILE/$tarfile/;
 
-print $alien_file;
+print $alien_file . "\n";
 
 my $build = alienfile_ok ($alien_file);
 alien_download_ok();
@@ -36,6 +36,7 @@ alien_extract_ok();
 
 use Data::Dump qw /dd/;
 print dd $build;
+print "\n";
 
 my $build_dir = $build->install_prop->{extract};
 ok (-e $build_dir, 'build dir exists');
@@ -46,4 +47,4 @@ ok (!-e $build_dir, 'build dir no longer exists')
  or system "dir $build_dir";
 
 
-done_testing
+done_testing();

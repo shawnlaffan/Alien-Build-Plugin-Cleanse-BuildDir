@@ -8,8 +8,8 @@ use Alien::Build::Plugin;
 use File::Path qw /remove_tree/;
 use Cwd qw /getcwd/;
 
-# ABSTRACT: Alien::Build plugin to cleanse the build dir
-our $VERSION = '0.01';  # VERSION
+### ABSTRACT: Alien::Build plugin to cleanse the build dir
+#our $VERSION = '0.01';  # VERSION
 
 
 sub init {
