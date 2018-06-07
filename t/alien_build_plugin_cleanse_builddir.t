@@ -10,12 +10,9 @@ my $alien_file = q|
 
     share {
       start_url 'file://TARFILE';
-      plugin Download => (
-        #filter  => qr/^gdal-([0-9\.]+)\.tar\.gz$/,
-        #version => qr/^gdal-([0-9\.]+)\.tar\.gz$/,
-      );
-
+      plugin Download;
       plugin Extract => 'tar';
+
       plugin 'Cleanse::BuildDir';
       
       #  no need to actually do anything
