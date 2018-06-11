@@ -4,18 +4,23 @@ Alien::Build plugin to cleanse the build dir
 
 # SYNOPSIS
 
-\#  need to enter something here
+       use alienfile
+       share {
+           #  other commands to download, unpack and build etc.
+           plugin 'Cleanse::BuildDir';
+       };
 
     1;
 
 # DESCRIPTION
 
 This plugin deletes the build directory after the make phase.
-This is useful if you have a large build size, and was
+This is useful if your alien has a large build size.  It was
 developed because [Alien::gdal](https://metacpan.org/pod/Alien::gdal) is enormous, and was
-filling up disk space on cpan testers.  
+filling up disk space on cpan testers.
 
-You might want to use it conditionally, for example when you know the
+You should use it conditionally in your alienfile,
+for example when you know the
 build dir contents are not needed later.
 
 # NAME

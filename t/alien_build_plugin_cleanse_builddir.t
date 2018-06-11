@@ -10,7 +10,7 @@ my $alien_file = q|
 
     share {
       start_url 'file://TARFILE';
-      plugin Download;
+      plugin 'Download';
       plugin Extract => 'tar';
 
       plugin 'Cleanse::BuildDir';
@@ -41,7 +41,7 @@ ok (-e $build_dir, 'build dir exists');
 my $alien = alien_build_ok();
 
 ok (!-e $build_dir, 'build dir no longer exists')
- or system "dir $build_dir";
+ or print join ', ',  glob ("$build_dir/*");
 
 
 done_testing();
