@@ -30,8 +30,10 @@ sub init {
         
         $build->log ("Going to delete $build_dir\n");
         $build->log ("Currently in " . getcwd() . "\n");
-        #  clunky - not an OS sensitive check 
-        if (path (getcwd())->absolute =~ /^$build_dir/) {
+
+        my $curdir = getcwd();
+        if (path($curdir)->subsumes ($build_dir)) {
+            $build->log ("Going up one directory\n");
             chdir '..';
         }
         
