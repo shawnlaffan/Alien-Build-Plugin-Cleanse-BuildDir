@@ -10,7 +10,7 @@ use Cwd qw /getcwd/;
 use Path::Tiny qw /path/;
 
 # ABSTRACT: Alien::Build plugin to cleanse the build dir
-our $VERSION = '0.01';  # VERSION
+our $VERSION = '0.02_001';  # VERSION
 
 
 sub init {
@@ -28,7 +28,10 @@ sub init {
             $build->log ("Unable to determine build dir\n");
             return;
         }
-        
+
+        #  a spot of paranoia        
+        #return if $build_dir !~ /\b_alien\b/;
+
         $build->log ("Going to delete $build_dir\n");
         $build->log ("Currently in " . getcwd() . "\n");
 
