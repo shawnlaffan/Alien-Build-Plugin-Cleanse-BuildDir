@@ -1,6 +1,7 @@
 Revision history for Alien-Build-Plugin-Cleanse-BuildDir
 
-0.01      2018-07-29 20:36:53 +1000
+0.02      2018-07-29 20:36:53 +1000
+  - Stop using Dist::Zilla
 
 0.01      2018-06-07
   - initial version, modified from Alien-Build-Plugin-Fetch-Rewrite
