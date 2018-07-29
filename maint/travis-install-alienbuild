@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-set -euo pipefail
+set -euxo pipefail
 IFS=$'\n\t'
 
 rm -rf /tmp/Alien-Build
