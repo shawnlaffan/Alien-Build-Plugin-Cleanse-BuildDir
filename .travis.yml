@@ -3,7 +3,7 @@ sudo: false
 
 install:
   - perlbrew list
-  - sh ./maint/travis-install-alienbuild
+  - bash ./maint/travis-install-alienbuild
   - cpanm -n Dist::Zilla
   - dzil authordeps --missing | cpanm -n
   - dzil listdeps   --missing | cpanm -n

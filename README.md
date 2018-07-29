@@ -6,7 +6,8 @@ Alien::Build plugin to cleanse the build dir
 
        use alienfile
        share {
-           #  other commands to download, unpack and build etc.
+           #  other commands to download, unpack and build etc.,
+           #  and then:
            plugin 'Cleanse::BuildDir';
        };
 
