@@ -18,5 +18,6 @@ perl:
   - "5.24"
   - "5.26"
 
-#script:
+script:
   #- dzil test -v
+  - prove -l
