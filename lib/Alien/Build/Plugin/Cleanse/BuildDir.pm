@@ -10,7 +10,7 @@ use Cwd qw /getcwd/;
 use Path::Tiny qw /path/;
 
 # ABSTRACT: Alien::Build plugin to cleanse the build dir
-our $VERSION = '0.02_001';  # VERSION
+our $VERSION = '0.01';  our $VERSION = '0.01'; # VERSION
 
 
 sub init {
@@ -94,6 +94,13 @@ Has no effect if you are running a non-share install,
 or are using an out of source build
 (although these are currently untested).
 
+=head1 NAME
+
+Alien::Build::Plugin::Cleanse::BuildDir - Alien::Build plugin to cleanse the build dir
+
+=head1 VERSION
+
+version 0.01
 
 =head1 SEE ALSO
 
@@ -102,6 +109,17 @@ or are using an out of source build
 =item L<Alien::Build>
 
 =back
+
+=head1 AUTHOR
+
+Shawn Laffan <shawnlaffan@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2018 by Shawn Laffan.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =head1 AUTHOR
 
