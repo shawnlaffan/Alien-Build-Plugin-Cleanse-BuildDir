@@ -1,3 +1,5 @@
 .appveyor.yml
 .gitattributes
 .travis.yml
+.git
+blib
