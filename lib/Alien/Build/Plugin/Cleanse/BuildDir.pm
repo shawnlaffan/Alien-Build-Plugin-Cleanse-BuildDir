@@ -33,8 +33,8 @@ sub init {
 
         my $curdir = getcwd();
         if (path($curdir)->subsumes ($build_dir)) {
-            $build->log ("Going up one directory\n");
-            chdir '..';
+            $build->log ("Going to parent of build directory\n");
+            chdir "$build_dir/..";
         }
         
         my $count = eval {
@@ -68,7 +68,8 @@ version 0.01
 
     use alienfile
     share {
-        #  other commands to download, unpack and build etc.
+        #  other commands to download, unpack and build etc.,
+        #  and then:
         plugin 'Cleanse::BuildDir';
     };
 
