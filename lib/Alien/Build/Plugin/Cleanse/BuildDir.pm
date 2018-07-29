@@ -20,6 +20,7 @@ sub init {
         my($build) = @_;
         
         return if $build->install_type ne 'share';
+        return if $build->meta_prop->{out_of_source};
 
         my $build_dir = path ($build->install_prop->{extract})->absolute;
 
