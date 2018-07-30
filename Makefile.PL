@@ -32,6 +32,7 @@ my %WriteMakefileArgs = (
     "Cwd"          => 0,
     "File::Path"   => 0,
     "Path::Tiny"   => 0,
+    "URI"          => 0,
     "URI::file"    => 0,
     "URI::Escape"  => 0,
   },

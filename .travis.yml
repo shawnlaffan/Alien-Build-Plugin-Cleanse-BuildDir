@@ -1,6 +1,10 @@
 language: perl
 sudo: false
 
+os:
+  - linux
+  - osx
+
 install:
   - perlbrew list
   #- bash ./maint/travis-install-alienbuild
