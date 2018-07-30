@@ -31,7 +31,9 @@ my %WriteMakefileArgs = (
     "Alien::Build" => "0.62",
     "Cwd"          => 0,
     "File::Path"   => 0,
-    "Path::Tiny"   => 0
+    "Path::Tiny"   => 0,
+    "URI::File"    => 0,
+    "URI::Escape"  => 0,
   },
   "TEST_REQUIRES" => {
     "Capture::Tiny"      => 0,
