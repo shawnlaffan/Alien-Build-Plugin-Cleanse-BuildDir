@@ -1,5 +1,3 @@
-Alien-Build-Plugin-Cleanse-BuildDir-0.01.tar.gz
-Alien-Build-Plugin-Cleanse-BuildDir-0.02.tar.gz
 author.yml
 Changes
 corpus/dist/foo-1.00.tar
@@ -10,7 +8,6 @@ maint/travis-install-alienbuild
 Makefile
 Makefile.PL
 MANIFEST
-MANIFEST.bak
 MANIFEST.SKIP
 META.json
 META.yml
