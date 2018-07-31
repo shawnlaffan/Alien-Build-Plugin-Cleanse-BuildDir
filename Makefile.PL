@@ -32,16 +32,13 @@ my %WriteMakefileArgs = (
     "Cwd"          => 0,
     "File::Path"   => 0,
     "Path::Tiny"   => 0,
-    "URI"          => 0,
-    "URI::file"    => 0,
-    "URI::Escape"  => 0,
   },
   "TEST_REQUIRES" => {
     "Capture::Tiny"      => 0,
     "Data::Dump"         => 0,
     "Test2::Mock"        => "0.000060",
     "Test2::V0"          => "0.000060",
-    "Test::Alien::Build" => 0
+    "Test::Alien::Build" => 0,
   },
   "test"    => {
     "TESTS" => "t/*.t"
