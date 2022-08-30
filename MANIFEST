@@ -1,15 +1,11 @@
 author.yml
 Changes
-corpus/dist/foo-1.00.tar
 INSTALL
 lib/Alien/Build/Plugin/Cleanse/BuildDir.pm
 LICENSE
-maint/travis-install-alienbuild
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 MANIFEST.SKIP
-META.json
-META.yml
 README.md
 t/00_diag.t
 t/01_use.t
